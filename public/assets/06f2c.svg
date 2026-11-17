@@ -1,0 +1,34 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="96.9177" height="109.218" viewBox="0 0 96.9177 109.218" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1244837598" filter="url(#filter0_d_0_931)">
+<g id="Union">
+</g>
+<rect id="Rectangle 161123482" x="32.9372" y="0.400161" width="61.5632" height="76.3379" rx="4.96836" transform="rotate(20.4085 32.9372 0.400161)" fill="url(#paint0_linear_0_931)"/>
+<mask id="stroke0_0_931" fill="white">
+<path d="M31.169 4.6565C32.1258 2.08478 34.9863 0.775676 37.558 1.73252L85.9439 19.7352C88.5156 20.6921 89.8247 23.5525 88.8679 26.1243L65.713 88.3575C64.7562 90.9292 61.8957 92.2383 59.324 91.2815L10.9381 73.2787C8.36642 72.3219 7.05732 69.4614 8.01416 66.8897L31.169 4.6565Z"/>
+</mask>
+<path id="Rectangle 161123483" d="M37.558 1.73252C41.7089 3.35055 45.861 4.96534 50.0143 6.57691C61.906 11.1911 73.8075 15.7788 85.7189 20.34C87.8886 21.1153 89.0608 23.7822 88.1969 25.8746C80.3002 46.5526 72.4833 67.2603 64.7463 87.9978C64.0619 89.9794 61.6291 91.0904 59.685 90.3114C43.5563 84.3105 27.4098 78.3578 11.2452 72.4534C9.18209 71.7613 7.99073 69.2331 8.7924 67.1793C15.7336 48.1229 22.6077 29.0415 29.4148 9.93523C30.0368 8.1895 30.6582 6.44357 31.279 4.69742C32.0815 2.24268 35.082 0.789269 37.558 1.73252C35.1182 0.709462 31.9816 2.06476 31.059 4.61557C30.3875 6.34287 29.7165 8.07036 29.0462 9.79807C21.7091 28.7072 14.439 47.6412 7.23592 66.6002C6.07129 69.4621 7.68864 73.0711 10.6311 74.1041C26.7238 80.2015 42.8345 86.2507 58.9631 92.2516C58.9631 92.2516 58.9631 92.2516 58.9631 92.2516C61.9347 93.4389 65.6391 91.7411 66.6798 88.7172C74.3794 67.9658 81.999 47.1847 89.5389 26.3739C90.6413 23.5505 89.0048 20.0802 86.1689 19.1305C74.173 14.7966 62.1671 10.4892 50.1514 6.20827C45.9548 4.71312 41.757 3.2212 37.558 1.73252ZM37.558 1.73252" fill="#8DE5A2" mask="url(#stroke0_0_931)"/>
+<g id="Group 1244837601">
+<path id="Vector 4814" d="M35.8924 13.6903L75.405 28.3916" stroke-width="3.72627" stroke-linecap="round" stroke="#F0743F"/>
+<path id="Vector 4817" d="M24.9374 43.1289L69.9127 59.8627" stroke-width="3.72627" stroke-linecap="round" stroke="#F0743F"/>
+<path id="Vector 4818" d="M22.2254 50.4144L67.2007 67.1482" stroke-width="3.72627" stroke-linecap="round" stroke="#F0743F"/>
+<path id="Vector 4815" d="M33.2582 20.7701L66.114 32.9946" stroke-width="3.72627" stroke-linecap="round" stroke="#F0743F"/>
+<path id="Vector 4816" d="M30.4975 28.1771L56.4557 37.8353" stroke-width="3.72627" stroke-linecap="round" stroke="#F0743F"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_931" x="-2.38419e-07" y="1.41931" width="96.9177" height="107.799" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="9.52269"/>
+<feGaussianBlur stdDeviation="3.85048"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_931"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_931" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_0_931" x1="105.114" y1="-26.4544" x2="21.9184" y2="136.708" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6610A5"/>
+<stop offset="0.774038" stop-color="#FF7838"/>
+</linearGradient>
+</defs>
+</svg>

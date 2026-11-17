@@ -1,0 +1,23 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1450" height="721.786" viewBox="0 0 1450 721.786" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1244837539">
+<mask id="stroke0_0_1022" fill="white">
+<path d="M607.522 721.766C513.335 721.766 508.159 721.786 450.362 721.786L99.3369 305.295C88.9521 293.227 73.463 286.058 57.6934 286.058C25.7697 286.058 2.68138e-05 316.005 2.99722e-05 353.103L0 0.000111203L607.522 721.766Z"/>
+</mask>
+<path id="Union" d="M607.522 721.766C513.335 721.766 508.159 721.786 450.362 721.786L99.3369 305.295C88.952 293.227 73.463 286.058 57.6934 286.058C25.7697 286.058 2.68138e-05 316.005 2.99722e-05 353.103L0 0.000111203L607.522 721.766Z" stroke-width="2" stroke="url(#paint0_linear_0_1022)" mask="url(#stroke0_0_1022)"/>
+<mask id="stroke1_0_1022" fill="white">
+<path d="M842.479 721.766C936.665 721.766 941.841 721.786 999.638 721.786L1350.66 305.295C1361.05 293.227 1376.54 286.058 1392.31 286.058C1424.23 286.058 1450 316.005 1450 353.103L1450 5.54977e-05L842.479 721.766Z"/>
+</mask>
+<path id="Union_2" d="M842.479 721.766C936.665 721.766 941.841 721.786 999.638 721.786L1350.66 305.295C1361.05 293.227 1376.54 286.058 1392.31 286.058C1424.23 286.058 1450 316.005 1450 353.103L1450 5.54977e-05L842.479 721.766Z" stroke-width="2" stroke="url(#paint1_linear_0_1022)" mask="url(#stroke1_0_1022)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_1022" x1="36.1737" y1="160.503" x2="561.74" y2="578.33" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#390878"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_1022" x1="1413.83" y1="160.503" x2="704.334" y2="733.817" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="0.588553" stop-color="#380777"/>
+<stop offset="0.858127" stop-color="#85325D"/>
+</linearGradient>
+</defs>
+</svg>
