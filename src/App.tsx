@@ -272,7 +272,11 @@ export default function App() {
         <div className="values__grid">
           <div className="values__column">
             {values.slice(0, 2).map((value) => (
-              <article className="value-card" key={value.title} tabIndex={0}>
+              <article
+                className={`value-card value-card--${value.title.toLowerCase()}`}
+                key={value.title}
+                tabIndex={0}
+              >
                 <div className="value-card__icon">
                   <img src={`${A}/${value.icon}`} alt="" />
                 </div>
@@ -285,7 +289,11 @@ export default function App() {
           </div>
           <div className="values__column">
             {values.slice(2).map((value) => (
-              <article className="value-card" key={value.title} tabIndex={0}>
+              <article
+                className={`value-card value-card--${value.title.toLowerCase()}`}
+                key={value.title}
+                tabIndex={0}
+              >
                 <div className="value-card__icon">
                   <img src={`${A}/${value.icon}`} alt="" />
                 </div>
