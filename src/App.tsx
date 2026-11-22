@@ -54,7 +54,7 @@ const values = [
   },
   {
     title: "Innovation",
-    text: "Your success is our success — we work as an extension of your team.",
+    text: "We rethink how compliance gets done, so you don\u2019t have to.",
     icon: "99a46.svg",
   },
 ];
@@ -270,15 +270,32 @@ export default function App() {
           <p>Expert regulatory compliance and quality assurance solutions tailored to your needs</p>
         </div>
         <div className="values__grid">
-          {values.map((value) => (
-            <article className="value-card" key={value.title}>
-              <div className="value-card__icon">
-                <img src={`${A}/${value.icon}`} alt="" />
-              </div>
-              <h3>{value.title}</h3>
-              <p>{value.text}</p>
-            </article>
-          ))}
+          <div className="values__column">
+            {values.slice(0, 2).map((value) => (
+              <article className="value-card" key={value.title} tabIndex={0}>
+                <div className="value-card__icon">
+                  <img src={`${A}/${value.icon}`} alt="" />
+                </div>
+                <div className="value-card__copy">
+                  <h3>{value.title}</h3>
+                  <p>{value.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="values__column">
+            {values.slice(2).map((value) => (
+              <article className="value-card" key={value.title} tabIndex={0}>
+                <div className="value-card__icon">
+                  <img src={`${A}/${value.icon}`} alt="" />
+                </div>
+                <div className="value-card__copy">
+                  <h3>{value.title}</h3>
+                  <p>{value.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

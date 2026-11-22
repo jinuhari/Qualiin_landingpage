@@ -313,25 +313,66 @@ main {
 
 .values__grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 46px;
+  max-width: 1184px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 32px;
+}
+
+.values__column {
+  display: grid;
+  gap: 32px;
+  align-content: start;
+}
+
+.values__column + .values__column {
+  margin-top: 64px;
 }
 
 .value-card {
   display: flex;
   min-width: 0;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+  align-items: center;
+  gap: 24px;
+  padding: 28px;
+  border: 1px solid #e4dcf0;
+  border-radius: 20px;
+  background: #fff;
+  outline: none;
+  transition:
+    transform 350ms cubic-bezier(0.3, 1.5, 0.5, 1),
+    border-color 250ms ease,
+    box-shadow 300ms ease;
+}
+
+.value-card:is(:hover, :focus-visible) {
+  transform: translateY(-4px);
+  border-color: #ff7838;
+  box-shadow: 0 14px 30px rgb(41 15 79 / 14%);
+}
+
+.value-card:focus-visible {
+  outline: 2px solid #ff7838;
+  outline-offset: 3px;
 }
 
 .value-card__icon {
   display: grid;
+  flex: 0 0 90px;
   width: 90px;
   height: 90px;
   place-items: center;
   border-radius: 12px;
   background: #f7f0fe;
+  transition:
+    background-color 300ms ease,
+    transform 400ms cubic-bezier(0.3, 1.5, 0.5, 1);
+}
+
+.value-card:is(:hover, :focus-visible) .value-card__icon {
+  background: #ebdcfc;
+  transform: scale(1.05) rotate(-2deg);
 }
 
 .value-card__icon img {
@@ -341,20 +382,20 @@ main {
 }
 
 .value-card h3 {
-  color: #000;
+  margin: 0 0 6px;
+  color: #14082b;
   font-family: "Inter:Semi Bold", Inter, sans-serif;
-  font-size: clamp(26px, 2.5vw, 36px);
+  font-size: 26px;
   font-weight: 600;
-  line-height: 1.5;
-  letter-spacing: -0.72px;
+  line-height: 1.2;
 }
 
 .value-card p {
-  max-width: 255px;
-  color: #000;
+  max-width: 360px;
+  margin: 0;
+  color: #4a3f5c;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: -0.32px;
 }
 
 .services {
@@ -901,8 +942,8 @@ footer {
   }
 
   .values__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 48px;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
   }
 
   .solutions {
@@ -1009,9 +1050,12 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .values__column + .values__column {
+    margin-top: 0;
+  }
+
   .value-card {
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
   }
 
   .value-card p {
@@ -1071,9 +1115,29 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  .values.section {
+    padding-inline: 16px;
+  }
+
+  .value-card {
+    flex-direction: column;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .value-card,
+  .value-card__icon {
+    transition: none;
+  }
+
+  .value-card:is(:hover, :focus-visible),
+  .value-card:is(:hover, :focus-visible) .value-card__icon {
+    transform: none;
   }
 
   .hero__gradient,
