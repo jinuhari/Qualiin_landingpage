@@ -72,7 +72,7 @@
 
 main {
   min-height: 100dvh;
-  overflow: hidden;
+  overflow: clip;
   background: white;
 }
 
@@ -206,87 +206,6 @@ main {
 
 .menu-button {
   display: none;
-}
-
-.hero {
-  position: relative;
-  display: grid;
-  min-height: 720px;
-  place-items: center;
-  overflow: hidden;
-  background: #310568;
-}
-
-.hero__lines {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.75;
-  pointer-events: none;
-}
-
-.hero__gradient {
-  position: absolute;
-  width: 650px;
-  height: 650px;
-  border-radius: 50%;
-  filter: blur(110px);
-  opacity: 0.55;
-  transition: translate 700ms cubic-bezier(0.22, 0.61, 0.36, 1);
-  will-change: transform;
-}
-
-.hero__gradient--one {
-  top: -420px;
-  left: 15%;
-  background: #8b4be1;
-  translate: var(--pointer-x, 0px) var(--pointer-y, 0px);
-  animation: float-one 14s ease-in-out infinite alternate;
-}
-
-.hero__gradient--two {
-  right: 5%;
-  bottom: -470px;
-  background: #ff7838;
-  translate: var(--pointer-x-reverse, 0px) var(--pointer-y-reverse, 0px);
-  animation: float-two 18s ease-in-out infinite alternate;
-}
-
-.hero__content {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  max-width: 1150px;
-  flex-direction: column;
-  align-items: center;
-  gap: 42px;
-  padding: 80px 24px;
-  text-align: center;
-}
-
-.hero h1 {
-  color: white;
-  font-family: "Inter:Bold", Inter, sans-serif;
-  font-size: clamp(42px, 4.45vw, 64px);
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: -1.28px;
-}
-
-.hero h1 em {
-  color: #ff7838;
-  font-style: normal;
-}
-
-.hero__content > p {
-  max-width: 950px;
-  color: #c5b2de;
-  font-family: "Inter:Medium", Inter, sans-serif;
-  font-size: clamp(18px, 1.67vw, 24px);
-  line-height: 1.6;
-  letter-spacing: -0.48px;
 }
 
 .section {
@@ -1294,23 +1213,6 @@ footer {
     display: none;
   }
 
-  .hero {
-    min-height: 650px;
-  }
-
-  .hero__content {
-    gap: 32px;
-  }
-
-  .hero h1 {
-    font-size: clamp(34px, 10vw, 48px);
-    line-height: 1.25;
-  }
-
-  .hero__content > p {
-    line-height: 1.5;
-  }
-
   .section {
     padding: 64px 24px;
   }
@@ -1471,7 +1373,6 @@ footer {
     transform: none;
   }
 
-  .hero__gradient,
   .cta__glow {
     animation: none;
     translate: 0 0;

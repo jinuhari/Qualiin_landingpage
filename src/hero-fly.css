@@ -1,0 +1,118 @@
+.hero-fly {
+  --hero-font: "Inter:Regular", Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --hero-bg: #310568;
+  --hero-orange: #ff7838;
+  --hero-sub: #c5b2de;
+  --hero-ink: #1c2e20;
+  --hero-title-shift: -0.55vw;
+  position: relative;
+  background: var(--hero-bg);
+  font-family: var(--hero-font);
+}
+
+.hero-fly__track {
+  position: relative;
+  height: 230vh;
+}
+
+.hero-fly__stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  min-height: 560px;
+  overflow: hidden;
+  background: var(--hero-bg);
+  isolation: isolate;
+}
+
+.hero-fly__layer {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-fly__orange {
+  transform-origin: 50% 69.44%;
+  will-change: transform;
+}
+
+.hero-fly__content {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  inset: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 0.52vw;
+  color: #fff;
+  text-align: center;
+  opacity: var(--hf-text, 1);
+  transform: translateY(calc((1 - var(--hf-text, 1)) * 18px));
+}
+
+.hero-fly__title {
+  position: relative;
+  left: var(--hero-title-shift, 0);
+  margin: 0;
+  font-size: clamp(30px, 4.435vw, 76px);
+  font-weight: 600;
+  line-height: 1.484;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+}
+
+.hero-fly__title span {
+  display: block;
+}
+
+.hero-fly__title em {
+  color: var(--hero-orange);
+  font-style: normal;
+}
+
+.hero-fly__sub {
+  max-width: min(47em, 94vw);
+  margin: clamp(8px, 1.8vw, 26px) 0 0;
+  color: var(--hero-sub);
+  font-size: clamp(14px, 1.386vw, 24px);
+  line-height: 1.9;
+  letter-spacing: 0.075em;
+}
+
+.hero-fly__btn {
+  display: inline-flex;
+  width: 156px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(24px, 4.2vw, 60.5px);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--hero-ink);
+  font: 500 19px/1 var(--hero-font);
+  text-decoration: none;
+}
+
+.hero-fly__btn:focus-visible {
+  outline: 3px solid var(--hero-orange);
+  outline-offset: 3px;
+}
+
+/* TODO: Request a mobile-specific design; keep the supplied line art's crop unchanged. */
+@media (prefers-reduced-motion: reduce) {
+  .hero-fly__track {
+    height: auto;
+  }
+
+  .hero-fly__stage {
+    position: relative;
+  }
+
+  .hero-fly__orange {
+    will-change: auto;
+  }
+}

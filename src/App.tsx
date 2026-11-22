@@ -1,4 +1,5 @@
 import { type PointerEvent, useEffect, useState } from "react";
+import HeroFly from "./HeroFly";
 
 const A = "/assets";
 
@@ -343,7 +344,7 @@ export default function App() {
   return (
     <main>
       <header className="site-header">
-        <a href="#top" className="logo-link">
+        <a href="#hero-fly" className="logo-link">
           <Logo />
         </a>
         <button
@@ -375,30 +376,7 @@ export default function App() {
         </a>
       </header>
 
-      <section
-        className="hero"
-        id="top"
-        onPointerMove={moveGradient}
-        onPointerLeave={resetGradient}
-      >
-        <div className="hero__gradient hero__gradient--one" />
-        <div className="hero__gradient hero__gradient--two" />
-        <img className="hero__lines" src={`${A}/119d6.svg`} alt="" />
-        <div className="hero__content">
-          <h1>
-            GUIDED BY <em>QUALITY</em>
-            <br />
-            DRIVEN BY <em>INNOVATION</em>
-          </h1>
-          <p>
-            Helping companies to focus on innovation and quality, by helping them navigate A to Z
-            regulations.
-          </p>
-          <a className="button" href="#contact">
-            Contact Us
-          </a>
-        </div>
-      </section>
+      <HeroFly />
 
       <section className="values section" id="values">
         <div className="section-heading">
